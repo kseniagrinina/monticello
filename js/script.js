@@ -101,6 +101,27 @@ $(document).ready(function () {
         });
 
 
+    const modalNewYork = document.getElementById('modalNewYork');
+    const modalBtnNewYork = document.getElementById('modalBtnNewYork');
+    const closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+    modalBtnNewYork.addEventListener('click', openModalNewYork);
+    closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', outsideClick);
+
+    function openModalNewYork() {
+        modalNewYork.style.display = 'block';
+    }
+
+    function closeModal() {
+        modalNewYork.style.display = 'none';
+    }
+
+    function outsideClick(e) {
+        if (e.target == modalNewYork) {
+            modalNewYork.style.display = 'none';
+        }
+    }
 });
 
 
@@ -125,3 +146,4 @@ function initMap() {
         infoWindow.open(map, marker);
     })
 };
+
