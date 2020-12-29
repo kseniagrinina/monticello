@@ -715,7 +715,7 @@ header .slick-dots li.slick-active button:before {
   height: 100%;
   background-color: #55b7ff;
   top: -15%;
-  left: -20%;
+  left: -18%;
   z-index: -1;
 }
 
@@ -726,7 +726,7 @@ header .slick-dots li.slick-active button:before {
   height: 100%;
   background-color: #7e5aff;
   top: -15%;
-  left: 20%;
+  left: 18%;
   z-index: -1;
 }
 

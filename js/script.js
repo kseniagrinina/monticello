@@ -101,6 +101,10 @@ $(document).ready(function () {
         });
 
 
+
+    // document.getElementById(‘modalNewYork’)  = $(‘#modalNewYork’)
+
+
     const modalNewYork = document.getElementById('modalNewYork');
     const modalBtnNewYork = document.getElementById('modalBtnNewYork');
     const closeBtn = document.getElementsByClassName('closeBtn')[0];
