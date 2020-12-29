@@ -1,5 +1,5 @@
 /* from small laptop to medium laptop 1440px */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1375px) {
 
     .project__description {
         padding: 3rem 0;
@@ -94,24 +94,83 @@
     html {
         font-size: 45%;
     }
+
+    .nav-logo__img {
+      width: 22rem;
+      height: auto;
+    }
+
+    header .sticky .nav-menu__link:before,
+    header .sticky .nav-menu__link.active:before,
+    header .nav-menu__link:before,
+    header .nav-menu__link.active:before {
+      display: none;
+    }
+
     .project__description {
         padding: 0;
       }
 }
 
 
-/* Small phones to small tablets from 481px to 767px */
-@media only screen and (max-width: 767px) {
+/* Small phones to small tablets from 481px to 768px */
+@media only screen and (max-width: 768px) {
     html {
         font-size: 40%;
     }
 
     .container {
-        width: 95%;
+        width: 90%;
       }
 
+      .mobile-nav__icon {
+        display: inline-block;
+        padding-top: 1rem;
+      }
+
+      header .nav-social,
+      header .nav-menu {
+        display: none;
+      }
+
+      header .nav-menu__list {
+        padding: 1rem 3rem 0 0;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header .nav-menu__link:link,
+      header .nav-menu__link:visited {
+  font-size: 2rem;
+}
+
+      header .sticky .mobile-nav__icon {
+        color:  #4b5562;
+      }
+
+      header .nav-menu__item {
+        margin: unset;
+        padding: .3rem 0 2rem 0;
+      }
+
+      header .nav__wrapper {
+        align-items: flex-start;
+    }
+
+
+
+      header .nav__wrapper {
+        justify-content: space-between;
+        max-width: 85%;
+    }
+
+    .nav-logo__img {
+      width: 25rem;
+    }
+
     .down__link {
-        bottom: 10rem;
+        bottom: 15rem;
     }
 
     .gallery__body {
@@ -130,9 +189,15 @@
           flex-direction: column-reverse;
       }
 
-      .project__photo:nth-of-type(odd)::after,
+      .project__photo:nth-of-type(odd)::after {
+        top: -5%;
+        left: -5%;
+        overflow: hidden;
+      }
+      
       .project__photo:nth-of-type(even)::after {
-          top: -5%;
+        top: -5%;
+        left: 5%;
       }
 
       .project__description {
@@ -203,6 +268,21 @@
 
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
+
+  .nav-logo__img {
+    width: 18rem;
+  }
+
+  header .nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header .sticky.nav {
+    max-width: 100%;
+    /* width: 90%; */
+    margin: 0 auto;
+  }
     .contact__info {
         width: 100%;
       }

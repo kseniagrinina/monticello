@@ -6,6 +6,11 @@
   color: #2c4058;
   text-transform: uppercase;
   font-size: 1.4rem;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
 }
 
 .button:focus {
@@ -121,7 +126,8 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.header-slider .header-slide:focus {
+.header-slider,
+.header-slide:focus {
   outline: none;
 }
 
@@ -433,9 +439,10 @@ header .nav {
 }
 
 header .sticky {
+  max-width: 100%;
   position: fixed;
   padding: .5rem 0;
-  background-color: rgb(255, 255, 255, .85);
+  background-color: rgb(255, 255, 255, .9);
   box-shadow: 0 .2rem .2rem #efefef;
 }
 
@@ -480,7 +487,7 @@ header .sticky .nav-social__link:active {
 }
 
 header .nav__wrapper {
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -549,6 +556,13 @@ header .nav-menu__link:visited {
 
 header .nav-menu__link:hover, header .nav-menu__link:active {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-nav__icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 3rem;
+  display: none;
 }
 
 header .nav-social {
@@ -667,7 +681,8 @@ header .slick-dots li.slick-active button:before {
   outline: none;
 }
 
-.news__slide:focus {
+.news__slide:focus,
+.news__slider:focus {
   outline: none;
 }
 

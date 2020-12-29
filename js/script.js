@@ -35,8 +35,23 @@ $(document).ready(function () {
         ]
     });
 
+    $('.js--nav-icon').click(function () {
+        const nav = $('.js--main-nav');
+        const icon = $('.js--nav-icon i')
+        nav.slideToggle(200);
+        if (icon.hasClass('fa-bars')) {
+            icon.addClass('fa-times');
+            icon.removeClass('fa-bars');
+        } else {
+            icon.addClass('fa-bars');
+            icon.removeClass('fa-times');
+        };
 
-    const nav = document.getElementById('nav');
+
+    });
+
+
+    // const nav = document.getElementById('nav');
     $('.js--section-projects').waypoint(function (direction) {
         if (direction == 'down') {
             $('nav').addClass('sticky');
