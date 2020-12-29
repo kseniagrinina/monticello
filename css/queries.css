@@ -262,6 +262,12 @@
         text-align: center;
       }
 
+      .modal-content {
+        margin: 10% auto;
+        padding: 3rem;
+        width: 80%;
+      }
+
 
 }
 
